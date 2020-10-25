@@ -15,8 +15,8 @@ type Session struct {
 
 // Dictate announces a session.
 func (s *Session) Dictate() {
-	speak("starting session in 5")
-	time.Sleep(5 * time.Second)
+	speak("starting session in 10")
+	time.Sleep(10 * time.Second)
 
 	for i, set := range s.Sets {
 		set.dictate(i)
